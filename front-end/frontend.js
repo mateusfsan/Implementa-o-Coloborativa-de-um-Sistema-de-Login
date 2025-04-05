@@ -25,6 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 errorMessage.style.color = '#4CAF50';
                 errorMessage.textContent = 'Login realizado com sucesso!';
                 // Aqui você pode redirecionar o usuário ou executar outras ações após o login
+                window.location.href = "operacoes.html";
             } else {
                 errorMessage.textContent = response.message || 'Erro ao fazer login. Tente novamente.';
             }
